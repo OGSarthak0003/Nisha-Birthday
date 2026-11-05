@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Nishaa 🤍</title>
+<style>
+:root{--ivory:#f8f4ea;--sage:#c7d9c8;--blue:#b9d7ea;--lav:#d7c8e8;--rose:#d9b8c4;--cream:#fff4d6}
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;background:linear-gradient(180deg,#eef5f3,#d8e7ef,#e9e3f3);color:#243}
+.hero,.final{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;position:relative;overflow:hidden}
+.hero:before,.final:before{content:"";position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80') center/cover;filter:brightness(.6)}
+.final:before{background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80')}
+.overlay{position:relative;z-index:2;max-width:700px}
+h1{font-size:clamp(2rem,6vw,4rem);color:#fff;margin:.3em 0}h2{color:#2d4a3e}
+.subtitle{color:#eef}.btn{background:rgba(255,255,255,.18);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.5);color:#fff;padding:14px 22px;border-radius:999px;cursor:pointer;font-size:1rem}
+.container{padding:30px 16px;max-width:1000px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:rgba(255,255,255,.72);backdrop-filter:blur(12px);border-radius:22px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.12);transition:.3s}
+.card:hover{transform:translateY(-5px)}
+.hidden{display:none}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}.gallery img{width:100%;height:170px;object-fit:cover;border-radius:16px}
+.letter{background:#fffef8;border-radius:18px;padding:20px;font-family:"Brush Script MT",cursive;font-size:1.35rem;line-height:1.6;box-shadow:inset 0 0 0 1px #eee}
+.envelope{background:linear-gradient(135deg,var(--cream),#fff);border-radius:20px;padding:24px;text-align:center}
+.rain,.petals{position:absolute;inset:0;pointer-events:none}
+.drop{position:absolute;width:2px;height:18px;background:rgba(255,255,255,.45);animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(110vh)}} .petal{position:absolute;font-size:18px;animation:float 9s linear infinite}
+@keyframes float{0%{transform:translateY(0)}100%{transform:translateY(-110vh) translateX(30px)}}
+.fade{animation:fade .7s}@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+.gift-card{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.82);background:linear-gradient(145deg,rgba(255,255,255,.9),rgba(225,239,230,.82))}
+.gift-icon{width:54px;height:54px;display:grid;place-items:center;border-radius:18px;background:linear-gradient(145deg,#fff8e8,#dcebe4);font-size:1.55rem;box-shadow:0 6px 18px rgba(74,102,87,.12);margin-bottom:12px}
+.gift-open{position:relative;z-index:1;color:#355447!important;border:1px solid #b9cfc1!important;background:linear-gradient(135deg,#fffdf5,#e3eee7)!important;box-shadow:0 5px 14px rgba(75,105,88,.12);transition:.25s}
+.gift-open:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(75,105,88,.18)}
+.gift-modal{position:fixed;inset:0;z-index:20;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(25,43,39,.58);backdrop-filter:blur(12px)}
+.gift-modal.show{display:flex;animation:veil .35s ease}
+.modal-paper{width:min(760px,100%);max-height:88vh;overflow:auto;position:relative;padding:clamp(22px,5vw,42px);border-radius:28px;border:1px solid rgba(255,255,255,.9);background:linear-gradient(145deg,#fffdf7,#f0f5ec 58%,#edf2f8);box-shadow:0 25px 90px rgba(0,0,0,.28);animation:unfold .65s cubic-bezier(.2,.8,.2,1)}
+.modal-paper:before{content:"";position:absolute;inset:10px;border:1px solid rgba(158,184,164,.35);border-radius:20px;pointer-events:none}
+.modal-content{position:relative;z-index:1}.modal-close{position:absolute;right:18px;top:15px;border:0;background:#e8eee8;color:#405a4d;border-radius:50%;width:38px;height:38px;font-size:1.15rem;cursor:pointer;z-index:2}
+.modal-kicker{font:.72rem Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#789487;text-align:center}
+.modal-title{text-align:center;font-size:clamp(1.6rem,4vw,2.25rem);color:#355447;margin:12px 0 22px}
+.modal-divider{width:58px;height:2px;background:linear-gradient(90deg,#d9b8c4,#a9c7b4,#b9d7ea);margin:0 auto 22px}
+.modal-content p{line-height:1.8;color:#4b5d54}
+@keyframes veil{from{opacity:0}to{opacity:1}}@keyframes unfold{from{opacity:0;transform:translateY(28px) scale(.94)}to{opacity:1;transform:none}}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.gallery figure{margin:0;background:rgba(255,255,255,.78);padding:8px;border-radius:18px;box-shadow:0 8px 22px rgba(54,79,67,.1)}
+.gallery img{width:100%;height:175px;object-fit:cover;border-radius:13px;display:block}
+.gallery figcaption{padding:10px 7px 7px;text-align:center;color:#52695c;font-size:.96rem;line-height:1.45}
+.gallery figcaption strong{display:block;color:#385747;font-size:1rem;margin-bottom:4px}
+
+
+.final-wish-btn{position:relative;overflow:hidden}
+.final-wish-btn:after{content:"";position:absolute;top:-60%;left:-35%;width:24%;height:220%;background:rgba(255,255,255,.38);transform:rotate(25deg);transition:left .7s ease}
+.final-wish-btn:hover:after{left:125%}
+.wish-reveal{position:relative;isolation:isolate;margin:22px auto 0;max-width:620px;padding:24px 22px;border:1px solid rgba(255,255,255,.55);border-radius:22px;background:linear-gradient(135deg,rgba(255,255,255,.2),rgba(220,237,228,.16),rgba(218,210,239,.2));backdrop-filter:blur(12px);box-shadow:0 12px 40px rgba(12,34,31,.18);color:#fff;line-height:1.85;opacity:0}
+.wish-reveal.revealed{animation:wishBloom 1.15s cubic-bezier(.2,.8,.2,1) forwards}
+.wish-reveal:before{content:"✧";position:absolute;top:-17px;left:50%;transform:translateX(-50%);font-size:26px;color:#fff4d6;text-shadow:0 0 16px #fff;animation:starPulse 2s ease-in-out infinite}
+.wish-signoff{display:block;margin-top:12px;font-style:italic;color:#fff4d6}
+.wish-petal{position:absolute;z-index:3;pointer-events:none;font-size:19px;animation:wishDrift 3.8s ease-out forwards;filter:drop-shadow(0 2px 5px rgba(0,0,0,.2))}
+@keyframes wishBloom{0%{opacity:0;transform:translateY(28px) scale(.92);filter:blur(5px)}65%{opacity:1;transform:translateY(-4px) scale(1.015);filter:blur(0)}100%{opacity:1;transform:none;filter:none}}
+@keyframes starPulse{0%,100%{opacity:.65;text-shadow:0 0 8px #fff}50%{opacity:1;text-shadow:0 0 22px #fff,0 0 34px #e8d9ff}}
+@keyframes wishDrift{0%{opacity:0;transform:translateY(0) rotate(0) scale(.65)}15%{opacity:1}100%{opacity:0;transform:translateY(-190px) translateX(var(--drift,30px)) rotate(120deg) scale(1.15)}}
+@media(prefers-reduced-motion:reduce){.wish-reveal.revealed,.wish-petal,.wish-reveal:before{animation:none}.wish-reveal.revealed{opacity:1}}
+
+
+.final .overlay{width:min(760px,100%)}
+.final .overlay h1{animation:finalTitleFloat 5s ease-in-out infinite;text-shadow:0 4px 24px rgba(255,255,255,.22)}
+.final .overlay>.subtitle{animation:subtitleGlow 4s ease-in-out infinite}
+.final-wish-btn{margin-top:8px;box-shadow:0 0 0 0 rgba(255,244,214,.45);animation:buttonHalo 2.8s ease-in-out infinite}
+.final-wish-btn:active{transform:scale(.97)}
+.wish-reveal{transform-origin:50% 0}
+.wish-reveal.revealed{animation:wishBloom 1.15s cubic-bezier(.2,.8,.2,1) forwards, wishGlow 4s ease-in-out 1.15s infinite}
+.wish-reveal.revealed .wish-signoff{animation:signoffRise .9s ease .7s both}
+.final .petals:after{content:"✦     ✧        ✦       ✧      ✦";position:absolute;inset:12% 0 auto;color:rgba(255,255,255,.72);font-size:clamp(18px,3vw,30px);letter-spacing:1.4em;text-align:center;text-shadow:0 0 18px #fff;animation:skyTwinkle 5s ease-in-out infinite}
+@keyframes finalTitleFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes subtitleGlow{0%,100%{text-shadow:0 0 0 rgba(255,255,255,0)}50%{text-shadow:0 0 16px rgba(255,255,255,.5)}}
+@keyframes buttonHalo{0%,100%{box-shadow:0 0 0 0 rgba(255,244,214,0)}50%{box-shadow:0 0 0 9px rgba(255,244,214,.10),0 0 28px rgba(255,244,214,.28)}}
+@keyframes wishGlow{0%,100%{box-shadow:0 12px 40px rgba(12,34,31,.18)}50%{box-shadow:0 14px 52px rgba(255,244,214,.25)}}
+@keyframes signoffRise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes skyTwinkle{0%,100%{opacity:.35;transform:translateY(0)}50%{opacity:1;transform:translateY(8px)}}
+@media(prefers-reduced-motion:reduce){.final .overlay h1,.final .overlay>.subtitle,.final-wish-btn,.final .petals:after{animation:none}}
+
+
+.mystery-card{background:linear-gradient(145deg,rgba(246,240,255,.94),rgba(255,250,232,.9),rgba(225,239,235,.92));border:1px solid rgba(255,255,255,.9);position:relative}
+.mystery-card:after{content:"✧";position:absolute;right:18px;top:15px;color:#a38bbd;font-size:1.3rem;animation:starPulse 2.4s ease-in-out infinite}
+.mystery-icon{background:linear-gradient(145deg,#eee4fa,#fff2d9);color:#75618e}
+.mystery-note{margin-top:14px;padding:22px;border-radius:18px;text-align:center;background:linear-gradient(145deg,#fffdf8,#f0eafb 58%,#eaf4ef);border:1px solid #e5d9ef;box-shadow:inset 0 0 0 1px rgba(255,255,255,.8)}
+.mystery-note p{color:#53645a;line-height:1.8}
+.mystery-seal{font:.72rem Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#9179a8;margin-bottom:14px}
+
+</style></head><body>
+<div class="hero"><div class="rain" id="rain"></div><div class="overlay"><p class="subtitle">A LITTLE WORLD MADE JUST FOR YOU</p><h1>Happy Birthday, Nishaa! 🤍</h1><p class="subtitle">A quiet little fairytale made with care by Krishnaa.</p><button class="btn" onclick="document.getElementById('gifts').scrollIntoView({behavior:'smooth'})">Open your little surprise ✨</button><br><br><button class="btn" onclick="toggleAmbience()">🌧️ Gentle Rain Ambience</button></div></div>
+<div class="container" id="gifts"><h2 style="text-align:center">Five Little Surprises</h2><p style="text-align:center;color:#60776b;margin-top:-8px">Each little gift has a story. Open them slowly, one by one. 🤍</p><div class="grid">
+<div class="card gift-card"><div class="gift-icon">💌</div><h3>Birthday Letter</h3><p>A few words, wrapped with care.</p><button onclick="openGift('g1')" class="btn gift-open">Open</button><div id="g1" class="hidden fade"><p>Happy Birthday, Nishaa. May today feel as peaceful as rain over the mountains and as comforting as a quiet evening filled with gentle smiles.</p></div></div>
+<div class="card gift-card"><div class="gift-icon">🪷</div><h3>A Little Blessing</h3><p>A gentle wish for the journey ahead.</p><button onclick="openGift('g2')" class="btn gift-open">Open</button><div id="g2" class="hidden fade"><p>May Bhagwan bless your journey with peace, strength, protection, kindness, and light—especially on the days when you need it most.</p></div></div>
+<div class="card gift-card"><div class="gift-icon">🌧️</div><h3>Dreamy Monsoon World</h3><p>A tiny escape into your favourite kind of sky.</p><button onclick="openGift('g3')" class="btn gift-open">Open</button><div id="g3" class="hidden fade"><p style="text-align:center;font-style:italic">A little collection of places that feel like a deep breath.</p><div class="gallery">
+<figure><img alt="Mountain peaks rising through soft mist" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=85"><figcaption><strong>Where the clouds rest</strong>May you always find a place where your heart feels light.</figcaption></figure>
+<figure><img alt="Quiet green forest after rainfall" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=85"><figcaption><strong>After the first rain</strong>May life keep surprising you with fresh beginnings.</figcaption></figure>
+<figure><img alt="Waterfall flowing through a green landscape" src="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?auto=format&fit=crop&w=700&q=85"><figcaption><strong>A little river of joy</strong>May happiness find you in the simplest moments.</figcaption></figure>
+<figure><img alt="Clouds drifting above a peaceful mountain valley" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=700&q=85"><figcaption><strong>Your own quiet horizon</strong>May every dream you hold feel a little closer each day.</figcaption></figure></div>
+<p style="text-align:center;font-family:Georgia,serif;font-size:1.08rem;color:#496657"><em>“If the world ever feels too loud, may you always find a little peace in the rain, a little wonder in the mountains, and a reminder that beautiful things are still finding their way to you.”</em></p></div></div>
+<div class="card gift-card"><div class="gift-icon">✨</div><h3>Five Little Wishes</h3><p>Five little hopes, just for you.</p><button onclick="openGift('g4')" class="btn gift-open">Open</button><div id="g4" class="hidden fade"><ul><li>May your heart always find peace.</li><li>May your dreams find their way to reality.</li><li>May you always be surrounded by genuine people.</li><li>May every monsoon bring beautiful memories.</li><li>May Bhagwan guide and bless every step of your journey.</li></ul></div></div>
+<div class="card gift-card"><div class="gift-icon">🎁</div><h3>Something From Krishnaa</h3><p>The most personal little surprise.</p><button onclick="openGift('g5')" class="btn gift-open">Open</button><div id="g5" class="hidden fade envelope"><p>Tap the seal below.</p><button type="button" class="btn open-letter-btn" style="color:#234;border-color:#9ab;background:#eef">💌 Open Letter</button><div id="letter" class="hidden fade letter"><p>Hey Nishaa! 🥹🤍</p><p>Happy Birthday!</p><p>You know, sometimes people enter our lives in the most unexpected ways, and without even realising it, they become a beautiful part of our year.</p><p>Honestly, you're one of the best people I've met this year, and I'm genuinely glad that our paths crossed.</p><p>I hope you always find happiness in the little things, peace in the difficult moments, and courage to follow every dream you have.</p><p>May your life be as beautiful as a misty mountain morning, as refreshing as the first rain of monsoon, and as peaceful as a quiet evening surrounded by nature.</p><p>May Bhagwan always guide you, protect your happiness, and bless you with everything your heart genuinely wishes for.</p><p>Never change the beautiful person you are. Keep being your genuine self, keep smiling, and never forget that you deserve all the wonderful things life has to offer.</p><p>I'm really happy that I got to know you.</p><p>Happy Birthday once again, Nishaa! 🪷🤍</p><p>— With lots of good wishes,<br>Krishnaa</p></div></div>
+<div class="card gift-card mystery-card">
+  <div class="gift-icon mystery-icon">🔐</div>
+  <h3>One Last Mystery...</h3>
+  <p>There's something I almost forgot. Are you curious? 👀</p>
+  <button onclick="openGift('g6')" class="btn gift-open">Unlock the mystery ✨</button>
+  <div id="g6" class="hidden fade mystery-note">
+    <div class="mystery-seal">✦ A little reminder ✦</div>
+    <p>This is the last surprise! I just remembered something…</p>
+    <p>One day, I got late, and I said, “I'll do one thing you want.” And you said, “I'll think and tell you.” 😭</p>
+    <p>Wellll… this is your chance! 😜😜</p>
+    <p>So, Nishaa, what is that one thing you want me to do? I'm waitinggg. 👀🤍</p>
+    <span class="wish-signoff" style="color:#789487">— Krishnaa</span>
+  </div>
+</div>
+</div>
+</div></div>
+<div class="final"><div class="petals" id="petals"></div><div class="overlay"><h1>Some people make a year memorable just by being a part of it.</h1><p class="subtitle">Thank you for being one of those people, Nishaa. 🤍</p><p class="subtitle">Stay blessed. Stay happy. Keep shining.</p><h2 style="color:#fff">Happy Birthday, Bestfriend! 🥰</h2><p class="subtitle">— Krishnaa</p><button class="btn final-wish-btn" onclick="revealLastWish(this)">One last birthday wish ✨</button><div id="last" class="wish-reveal" aria-live="polite">May every sunrise bring you a reason to hope, every rainfall a moment of peace, and every mountain a reminder of the quiet strength within you. May the kindest people find their way into your life, may your dreams bloom in their own beautiful time, and may Bhagwan gently guide you through every chapter still waiting to unfold.<span class="wish-signoff">You deserve a life filled with little wonders, Nishaa. Happy Birthday. 🤍🪷</span></div></div></div>
+<div class="gift-modal" id="giftModal" role="dialog" aria-modal="true" aria-label="Birthday surprise">
+<div class="modal-paper"><button class="modal-close" aria-label="Close surprise" onclick="closeGift()">×</button><div class="modal-content" id="modalContent"></div></div></div>
+<script>
+function t(id){document.getElementById(id).classList.toggle('hidden')}
+const giftTitles={g1:"A Birthday Letter",g2:"A Little Blessing",g3:"Your Dreamy Monsoon World",g4:"Five Little Wishes",g5:"Something From Krishnaa",g6:"One Last Mystery..."};
+function openGift(id){
+ const source=document.getElementById(id), modal=document.getElementById('giftModal');
+ document.getElementById('modalContent').innerHTML='<div class="modal-kicker">A little surprise, made with care</div><h2 class="modal-title">'+giftTitles[id]+'</h2><div class="modal-divider"></div>'+source.innerHTML;
+ modal.classList.add('show');document.body.style.overflow='hidden';
+}
+function closeGift(){document.getElementById('giftModal').classList.remove('show');document.body.style.overflow='';}
+document.getElementById('giftModal').addEventListener('click',e=>{
+  if(e.target.id==='giftModal'){closeGift();return;}
+  const letterButton=e.target.closest('.open-letter-btn');
+  if(letterButton){
+    const letter=letterButton.parentElement.querySelector('.letter');
+    if(letter){
+      letter.classList.remove('hidden');
+      letter.classList.remove('fade');
+      void letter.offsetWidth;
+      letter.classList.add('fade');
+      letterButton.disabled=true;
+      letterButton.textContent='A little note, just for you 🤍';
+    }
+  }
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeGift()});
+
+function revealLetter(button){
+  const letter=button.parentElement.querySelector('.letter');
+  if(!letter)return;
+  letter.classList.remove('hidden');
+  letter.classList.remove('fade');
+  void letter.offsetWidth;
+  letter.classList.add('fade');
+  button.disabled=true;
+  button.textContent='A little note, just for you 🤍';
+}
+function revealLastWish(button){
+  const wish=document.getElementById('last');
+  if(!wish || wish.classList.contains('revealed'))return;
+  wish.classList.add('revealed');
+  button.textContent='A wish, sent with love 🤍';
+  button.disabled=true;
+  const area=document.querySelector('.final .overlay');
+  const symbols=['✧','❀','🪷','✦'];
+  for(let i=0;i<24;i++){
+    const petal=document.createElement('span');
+    petal.className='wish-petal';
+    petal.textContent=symbols[i%symbols.length];
+    petal.style.left=(8+Math.random()*84)+'%';
+    petal.style.top=(58+Math.random()*25)+'%';
+    petal.style.setProperty('--drift',((Math.random()-.5)*150)+'px');
+    petal.style.animationDelay=(Math.random()*.7)+'s';
+    area.appendChild(petal);
+    petal.addEventListener('animationend',()=>petal.remove(),{once:true});
+  }
+}
+const r=document.getElementById('rain');for(let i=0;i<120;i++){let d=document.createElement('div');d.className='drop';d.style.left=Math.random()*100+'%';d.style.top=Math.random()*-100+'vh';d.style.animationDuration=1+Math.random()*1.5+'s';d.style.animationDelay=Math.random()*2+'s';r.appendChild(d)}
+const p=document.getElementById('petals');for(let i=0;i<30;i++){let e=document.createElement('div');e.className='petal';e.textContent=i%2?'❀':'🪷';e.style.left=Math.random()*100+'%';e.style.bottom='-30px';e.style.animationDelay=Math.random()*8+'s';p.appendChild(e)}
+let ctx,noise;function toggleAmbience(){if(!ctx){ctx=new(window.AudioContext||window.webkitAudioContext)();let buffer=ctx.createBuffer(1,ctx.sampleRate*2,ctx.sampleRate),data=buffer.getChannelData(0);for(let i=0;i<data.length;i++)data[i]=(Math.random()*2-1)*0.15;noise=ctx.createBufferSource();noise.buffer=buffer;noise.loop=true;let lp=ctx.createBiquadFilter();lp.type='lowpass';lp.frequency.value=800;let g=ctx.createGain();g.gain.value=.12;noise.connect(lp).connect(g).connect(ctx.destination);noise.start()}ctx.state==='running'?ctx.suspend():ctx.resume()}
+</script></body></html>
